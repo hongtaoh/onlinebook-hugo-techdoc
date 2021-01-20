@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Ranking Sports - Visualizing 120 years of Summer Olympics</title>
+<meta name="description" content="A Data Visualization Project by Chris Fang &amp; Hongtao Hao for Professor YY&#39;s Dviz course">
+<meta name="generator" content="Hugo 0.70.0" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/plot/04-plot-ranking/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Ranking Sports" />
+<meta property="og:description" content="To rank sports according to the number of athletes, we first plotted a bar chart, each bar representing a category. As can be seen below, since there were too many categories, the names of sports overlapped to a degree that most of them were indistinguishable. Since there are around thirty sports, using colors is not an ideal option.
+We then thought about the word cloud. In word clouds, the size of words is associated with the frequencies." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/plot/04-plot-ranking/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Hugo Techdoc Theme" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Ranking Sports"/>
+<meta name="twitter:description" content="To rank sports according to the number of athletes, we first plotted a bar chart, each bar representing a category. As can be seen below, since there were too many categories, the names of sports overlapped to a degree that most of them were indistinguishable. Since there are around thirty sports, using colors is not an ideal option.
+We then thought about the word cloud. In word clouds, the size of words is associated with the frequencies."/>
+<meta itemprop="name" content="Ranking Sports">
+<meta itemprop="description" content="To rank sports according to the number of athletes, we first plotted a bar chart, each bar representing a category. As can be seen below, since there were too many categories, the names of sports overlapped to a degree that most of them were indistinguishable. Since there are around thirty sports, using colors is not an ideal option.
+We then thought about the word cloud. In word clouds, the size of words is associated with the frequencies.">
+
+<meta itemprop="wordCount" content="110">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Visualizing 120 years of Summer Olympics</h1>
+<a href="https://github.com/thingsym/hugo-theme-techdoc" class="github"><i class="fab fa-github"></i></a>
+<p class="description">A Data Visualization Project by Chris Fang &amp; Hongtao Hao for Professor YY&#39;s Dviz course</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://hongtaoh.com">Hongtao&#39;s Main Page</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Ranking Sports</h1>
+<p>To rank sports according to the number of athletes, we first plotted a bar chart, each bar representing a category. As can be seen below, since there were too many categories, the names of sports overlapped to a degree that most of them were indistinguishable. Since there are around thirty sports, using colors is not an ideal option.</p>
+<p>We then thought about the word cloud. In word clouds, the size of words is associated with the frequencies. This would make our ranking clearer. We did this visualization with the wordcloud package. See Figure 34.</p>
+<figure class="wide">
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/g-4-2.png"
+         alt="Figure 34: Word cloud of sports ranking by number of participants in all past Summer Olympics"/> <figcaption>
+            <p>Figure 34: Word cloud of sports ranking by number of participants in all past Summer Olympics</p>
+        </figcaption>
+</figure>
+
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/plot/04-plot-ranking.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/plot/03-plot-efficiency/" title="Medal Efficiency"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Medal Efficiency</a>
+<a class="nav nav-next" href="https://example.com/z-conclude/" title="Conclusion">Next - Conclusion <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=""><a href="https://example.com/abstract/">Abstract</a>
+  
+</li>
+
+<li class=""><a href="https://example.com/motivation/">Motivation</a>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/lit/">Literature Review<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/lit/lit-female/">Female Participation in Summer Olympics</a></li>
+<li class=""><a href="https://example.com/lit/homefiled/">Home-field Advantage</a></li>
+<li class=""><a href="https://example.com/lit/efficiency/">Medal Efficiency</a></li>
+<li class=""><a href="https://example.com/lit/ranking/">Ranking Sports by Number of Athletes</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/plans/">Visualization Plans<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/plans/01-plan-female/">Plans: Female Participation</a></li>
+<li class=""><a href="https://example.com/plans/02-plan-homefiled/">Plans: Home-field Advantage</a></li>
+<li class=""><a href="https://example.com/plans/03-plan-efficiency/">Plan: Medal Efficiency</a></li>
+<li class=""><a href="https://example.com/plans/04-plan-ranking/">Plans: Ranking Sports</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/plot/">Plotting<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/plot/01-plot-female/">Female Participation over Time</a></li>
+<li class=""><a href="https://example.com/plot/01-plot-female-continent/">Female Participation Across Continents</a></li>
+<li class=""><a href="https://example.com/plot/02-plot-homefiled/">Home-field Advantage</a></li>
+<li class=""><a href="https://example.com/plot/03-plot-efficiency/">Medal Efficiency</a></li>
+<li class="active"><a href="https://example.com/plot/04-plot-ranking/">Ranking Sports</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://example.com/z-conclude/">Conclusion</a>
+  
+</li>
+
+<li class=""><a href="https://example.com/z-ref/">References</a>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

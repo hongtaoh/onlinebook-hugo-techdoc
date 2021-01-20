@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Medal Efficiency - Visualizing 120 years of Summer Olympics</title>
+<meta name="description" content="A Data Visualization Project by Chris Fang &amp; Hongtao Hao for Professor YY&#39;s Dviz course">
+<meta name="generator" content="Hugo 0.70.0" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/plot/03-plot-efficiency/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Medal Efficiency" />
+<meta property="og:description" content="As planned, first of all, we did data manipulation before plotting. Golds were given 4 points, Silver 2, and Bronze 1. Attendance without any medals was assigned to 0 point. A country’s “medal efficiency” was calculated as the quotient of total medal points and the total number of athletes participating over 120 years. Therefore, if a country / region has a medal efficiency of 0.5, it means that on average, each athlete of that country / region earned half a Bronze." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/plot/03-plot-efficiency/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Hugo Techdoc Theme" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Medal Efficiency"/>
+<meta name="twitter:description" content="As planned, first of all, we did data manipulation before plotting. Golds were given 4 points, Silver 2, and Bronze 1. Attendance without any medals was assigned to 0 point. A country’s “medal efficiency” was calculated as the quotient of total medal points and the total number of athletes participating over 120 years. Therefore, if a country / region has a medal efficiency of 0.5, it means that on average, each athlete of that country / region earned half a Bronze."/>
+<meta itemprop="name" content="Medal Efficiency">
+<meta itemprop="description" content="As planned, first of all, we did data manipulation before plotting. Golds were given 4 points, Silver 2, and Bronze 1. Attendance without any medals was assigned to 0 point. A country’s “medal efficiency” was calculated as the quotient of total medal points and the total number of athletes participating over 120 years. Therefore, if a country / region has a medal efficiency of 0.5, it means that on average, each athlete of that country / region earned half a Bronze.">
+
+<meta itemprop="wordCount" content="188">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Visualizing 120 years of Summer Olympics</h1>
+<a href="https://github.com/thingsym/hugo-theme-techdoc" class="github"><i class="fab fa-github"></i></a>
+<p class="description">A Data Visualization Project by Chris Fang &amp; Hongtao Hao for Professor YY&#39;s Dviz course</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://hongtaoh.com">Hongtao&#39;s Main Page</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Medal Efficiency</h1>
+<p>As planned, first of all, we did data manipulation before plotting. Golds were given 4 points, Silver 2, and Bronze 1. Attendance without any medals was assigned to 0 point. A country’s “medal efficiency” was calculated as the quotient of total medal points and the total number of athletes participating over 120 years. Therefore, if a country / region has a medal efficiency of 0.5, it means that on average, each athlete of that country / region earned half a Bronze.</p>
+<p>We then plotted a choropleth map using orthographic projection. We applied Viridis color map where darker shades denote higher medal efficiency. To ensure interactivity, we made this map with the Plotly package. See Figure 33.</p>
+<figure class="wide">
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/g-3-1.png"
+         alt="Figure 33: Interactive choropleth for medal efficiency"/> <figcaption>
+            <p>Figure 33: Interactive choropleth for medal efficiency</p>
+        </figcaption>
+</figure>
+
+<p>We found this index both more accurate and intuitive. The reasons why it is more accurate have been outlined above. We believe that it is also more intuitive because, for example, for countries that still exist today, the highest medal efficiency is 0.91 for the United States of America. The fact that the highest is close to one makes it easier to compare between countries.</p>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/plot/03-plot-efficiency.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/plot/02-plot-homefiled/" title="Home-field Advantage"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Home-field Advantage</a>
+<a class="nav nav-next" href="https://example.com/plot/04-plot-ranking/" title="Ranking Sports">Next - Ranking Sports <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=""><a href="https://example.com/abstract/">Abstract</a>
+  
+</li>
+
+<li class=""><a href="https://example.com/motivation/">Motivation</a>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/lit/">Literature Review<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/lit/lit-female/">Female Participation in Summer Olympics</a></li>
+<li class=""><a href="https://example.com/lit/homefiled/">Home-field Advantage</a></li>
+<li class=""><a href="https://example.com/lit/efficiency/">Medal Efficiency</a></li>
+<li class=""><a href="https://example.com/lit/ranking/">Ranking Sports by Number of Athletes</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/plans/">Visualization Plans<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/plans/01-plan-female/">Plans: Female Participation</a></li>
+<li class=""><a href="https://example.com/plans/02-plan-homefiled/">Plans: Home-field Advantage</a></li>
+<li class=""><a href="https://example.com/plans/03-plan-efficiency/">Plan: Medal Efficiency</a></li>
+<li class=""><a href="https://example.com/plans/04-plan-ranking/">Plans: Ranking Sports</a></li>
+</ul>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/plot/">Plotting<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/plot/01-plot-female/">Female Participation over Time</a></li>
+<li class=""><a href="https://example.com/plot/01-plot-female-continent/">Female Participation Across Continents</a></li>
+<li class=""><a href="https://example.com/plot/02-plot-homefiled/">Home-field Advantage</a></li>
+<li class="active"><a href="https://example.com/plot/03-plot-efficiency/">Medal Efficiency</a></li>
+<li class=""><a href="https://example.com/plot/04-plot-ranking/">Ranking Sports</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://example.com/z-conclude/">Conclusion</a>
+  
+</li>
+
+<li class=""><a href="https://example.com/z-ref/">References</a>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

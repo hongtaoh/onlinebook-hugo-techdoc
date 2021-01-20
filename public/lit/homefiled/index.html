@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Home-field Advantage - Visualizing 120 years of Summer Olympics</title>
+<meta name="description" content="A Data Visualization Project by Chris Fang &amp; Hongtao Hao for Professor YY&#39;s Dviz course">
+<meta name="generator" content="Hugo 0.70.0" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/lit/homefiled/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Home-field Advantage" />
+<meta property="og:description" content="Similar to the attempt at showing female participation, simple and basic tables were utilized to examine the existence of home-field advantage at the Olympics (Pettigrew &amp; Reiche, 2016). See Figure 4.
+  Figure 4: Medals won by host countries at host year and the previous Olympics, Pettigrew &amp; Reiche (2016)
+  This visualization shows a table comparing the total number of medals earned at the host year and the previous Olympics." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/lit/homefiled/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Hugo Techdoc Theme" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Home-field Advantage"/>
+<meta name="twitter:description" content="Similar to the attempt at showing female participation, simple and basic tables were utilized to examine the existence of home-field advantage at the Olympics (Pettigrew &amp; Reiche, 2016). See Figure 4.
+  Figure 4: Medals won by host countries at host year and the previous Olympics, Pettigrew &amp; Reiche (2016)
+  This visualization shows a table comparing the total number of medals earned at the host year and the previous Olympics."/>
+<meta itemprop="name" content="Home-field Advantage">
+<meta itemprop="description" content="Similar to the attempt at showing female participation, simple and basic tables were utilized to examine the existence of home-field advantage at the Olympics (Pettigrew &amp; Reiche, 2016). See Figure 4.
+  Figure 4: Medals won by host countries at host year and the previous Olympics, Pettigrew &amp; Reiche (2016)
+  This visualization shows a table comparing the total number of medals earned at the host year and the previous Olympics.">
+
+<meta itemprop="wordCount" content="393">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Visualizing 120 years of Summer Olympics</h1>
+<a href="https://github.com/thingsym/hugo-theme-techdoc" class="github"><i class="fab fa-github"></i></a>
+<p class="description">A Data Visualization Project by Chris Fang &amp; Hongtao Hao for Professor YY&#39;s Dviz course</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://hongtaoh.com">Hongtao&#39;s Main Page</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Home-field Advantage</h1>
+<p>Similar to the attempt at showing female participation, simple and basic tables were utilized to examine the existence of home-field advantage at the Olympics (Pettigrew &amp; Reiche, 2016). See Figure 4.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/2-1.png"
+         alt="Figure 4: Medals won by host countries at host year and the previous Olympics, Pettigrew &amp;amp; Reiche (2016)"/> <figcaption>
+            <p>Figure 4: Medals won by host countries at host year and the previous Olympics, Pettigrew &amp; Reiche (2016)</p>
+        </figcaption>
+</figure>
+
+<p>This visualization shows a table comparing the total number of medals earned at the host year and the previous Olympics. Changes between the two were shown in the last column.  Among the 16 host countries from 1952 to 2012, only two countries showed negative changes, meaning that hosting the Olympics helped the country earn more medals. However, the problem with this method is that it is a little bit arbitrary to compare the host year and the adjacently previous Olympics. Changes might have been positive simply because these countries did not perform well only in the previous Games, even though they had performed well eight or more years before the host year. Therefore, it is a more robust choice to show these countries’ Olympic performances in all years.</p>
+<p>Clarke (2000) did this by calculating the “Home: Away Ratio”. See Table 2.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/2-3.png"
+         alt="Table 2: Percentage of available medals won by host countries at home and away, Clarke (2016)"/> <figcaption>
+            <p>Table 2: Percentage of available medals won by host countries at home and away, Clarke (2016)</p>
+        </figcaption>
+</figure>
+
+<p>He listed the percentage of all available medals won by countries that have ever hosted an Olympic both at the Home years and the Away years. The ratio of “Home: Away” was calculated. Obviously, a ratio larger than 1 indicates the existence of home-field advantage at the Olympics. The drawback of this method is that it only shows the summary of all the years, lacking information about these countries’ performance in each year.</p>
+<p>Visualizations showing all the years do exist (Grange, 2016). See Figure 5.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/2-2.png"
+         alt="Figure 5: Visualizing home-field advantage by Grange (2006)"/> <figcaption>
+            <p>Figure 5: Visualizing home-field advantage by Grange (2006)</p>
+        </figcaption>
+</figure>
+
+<p>For example, in this small multiple made by R, each graph has a blue vertical line emphasizing the number of medals earned during the host year, and a red horizontal line indicating the total average. It is very effective in the sense that it clearly compares the performance during the host year and all other years. The problem with this method is that lines are not very good at showing density distribution of medal numbers over the years. To improve this drawback, we decided to use kernel density estimation (KDE) coupled with small multiples.</p>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/lit/homefiled.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/lit/lit-female/" title="Female Participation in Summer Olympics"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Female Participation in Summer Olympics</a>
+<a class="nav nav-next" href="https://example.com/lit/efficiency/" title="Medal Efficiency">Next - Medal Efficiency <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=""><a href="https://example.com/abstract/">Abstract</a>
+  
+</li>
+
+<li class=""><a href="https://example.com/motivation/">Motivation</a>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/lit/">Literature Review<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/lit/lit-female/">Female Participation in Summer Olympics</a></li>
+<li class="active"><a href="https://example.com/lit/homefiled/">Home-field Advantage</a></li>
+<li class=""><a href="https://example.com/lit/efficiency/">Medal Efficiency</a></li>
+<li class=""><a href="https://example.com/lit/ranking/">Ranking Sports by Number of Athletes</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/plans/">Visualization Plans<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/plans/01-plan-female/">Plans: Female Participation</a></li>
+<li class=""><a href="https://example.com/plans/02-plan-homefiled/">Plans: Home-field Advantage</a></li>
+<li class=""><a href="https://example.com/plans/03-plan-efficiency/">Plan: Medal Efficiency</a></li>
+<li class=""><a href="https://example.com/plans/04-plan-ranking/">Plans: Ranking Sports</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/plot/">Plotting<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/plot/01-plot-female/">Female Participation over Time</a></li>
+<li class=""><a href="https://example.com/plot/01-plot-female-continent/">Female Participation Across Continents</a></li>
+<li class=""><a href="https://example.com/plot/02-plot-homefiled/">Home-field Advantage</a></li>
+<li class=""><a href="https://example.com/plot/03-plot-efficiency/">Medal Efficiency</a></li>
+<li class=""><a href="https://example.com/plot/04-plot-ranking/">Ranking Sports</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://example.com/z-conclude/">Conclusion</a>
+  
+</li>
+
+<li class=""><a href="https://example.com/z-ref/">References</a>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

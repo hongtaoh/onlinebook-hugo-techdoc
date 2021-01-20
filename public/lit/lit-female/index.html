@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Female Participation in Summer Olympics - Visualizing 120 years of Summer Olympics</title>
+<meta name="description" content="A Data Visualization Project by Chris Fang &amp; Hongtao Hao for Professor YY&#39;s Dviz course">
+<meta name="generator" content="Hugo 0.70.0" />
+<link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://example.com/lit/lit-female/">
+<link rel="stylesheet" href="https://example.com/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="https://example.com/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://example.com/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Female Participation in Summer Olympics" />
+<meta property="og:description" content="Many attempts have already been made to visualize female participation in the Olympics. The most basic one (Bmallion, 2015) is using tables to display the information about countries with the highest and lowest percentages of female athletes, and to show female percentages across the 120 years of the Olympics. See Table 1.
+  Table 1(a): Countries with the highest rate of female participation
+    Table 1(b): Female percentage in Olympic events" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/lit/lit-female/" />
+<meta property="og:image" content="https://example.com/images/og-image.png"/>
+<meta property="og:site_name" content="Hugo Techdoc Theme" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/images/og-image.png"/>
+
+<meta name="twitter:title" content="Female Participation in Summer Olympics"/>
+<meta name="twitter:description" content="Many attempts have already been made to visualize female participation in the Olympics. The most basic one (Bmallion, 2015) is using tables to display the information about countries with the highest and lowest percentages of female athletes, and to show female percentages across the 120 years of the Olympics. See Table 1.
+  Table 1(a): Countries with the highest rate of female participation
+    Table 1(b): Female percentage in Olympic events"/>
+<meta itemprop="name" content="Female Participation in Summer Olympics">
+<meta itemprop="description" content="Many attempts have already been made to visualize female participation in the Olympics. The most basic one (Bmallion, 2015) is using tables to display the information about countries with the highest and lowest percentages of female athletes, and to show female percentages across the 120 years of the Olympics. See Table 1.
+  Table 1(a): Countries with the highest rate of female participation
+    Table 1(b): Female percentage in Olympic events">
+
+<meta itemprop="wordCount" content="539">
+<meta itemprop="image" content="https://example.com/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body><div class="container"><header>
+<h1>Visualizing 120 years of Summer Olympics</h1>
+<a href="https://github.com/thingsym/hugo-theme-techdoc" class="github"><i class="fab fa-github"></i></a>
+<p class="description">A Data Visualization Project by Chris Fang &amp; Hongtao Hao for Professor YY&#39;s Dviz course</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="https://hongtaoh.com">Hongtao&#39;s Main Page</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Female Participation in Summer Olympics</h1>
+<p>Many attempts have already been made to visualize female participation in the Olympics. The most basic one (Bmallion, 2015) is using tables to display the information about countries with the highest and lowest percentages of female athletes, and to show female percentages across the 120 years of the Olympics. See Table 1.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/1-1.png"
+         alt="Table 1(a): Countries with the highest rate of female participation"/> <figcaption>
+            <p>Table 1(a): Countries with the highest rate of female participation</p>
+        </figcaption>
+</figure>
+
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/1-2.png"
+         alt="Table 1(b): Female percentage in Olympic events"/> <figcaption>
+            <p>Table 1(b): Female percentage in Olympic events</p>
+        </figcaption>
+</figure>
+
+<p>This method is simple and informative. This is useful for researchers looking for information on this topic, but it is not effective in terms of visualization. For example, looking at the plain number won’t help viewers have a clear idea of the trend in female participation in the past 120 years.</p>
+<p>Another simple but effective method is using a line graph displaying the number of female and male athletes in each Olympic Games from 1896 to 2016 (Nunes, 2019). See Figure 1.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/1-3.png"
+         alt="Figure. 1: Evolution of the number of Olympic athletes, male and female (1986-2016), Nunes (2019)"/> <figcaption>
+            <p>Figure. 1: Evolution of the number of Olympic athletes, male and female (1986-2016), Nunes (2019)</p>
+        </figcaption>
+</figure>
+
+<p>This graph is successful in showing the growth in the number of female athletes. However, it fails to show the percentage change. Although viewers can see directly the increase in the total number, they might find it difficult to notice the changes in the percentage.</p>
+<p><em>Washington Street Journal</em> did an interactive visualization comparing the inclusion of female and male events in the Olympics history (Serkez, 2018). It clearly shows that most men’s events were already established before the 1960s, whereas most women’s events were only introduced after the 1980s. See Figure 2.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/1-4.png"
+         alt="Figure. 2: Interactive plot by Washington Post showing inclusion of male and female Olympic events"/> <figcaption>
+            <p>Figure. 2: Interactive plot by Washington Post showing inclusion of male and female Olympic events</p>
+        </figcaption>
+</figure>
+
+<p>Each individual dot represents a sport of a gender. When clicked, there will be a line connecting to the same sport of a different gender, and information on the inclusion of this sport for both genders will appear. Overall, this visualization clearly shows how late the introduction of female events was in the Olympics history, but it did not show how the number and percentage of female athletes changed over the years.</p>
+<p>The official website of the International Olympic Committee (IOC) also made an attempt to show the growth in the percentage of sportswomen in the Olympics. See Figure 3.</p>
+<figure>
+    <img src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/1-5.png"
+         alt="Figure. 3: IOC graph visualizing female athletes&amp;rsquo; participation"/> <figcaption>
+            <p>Figure. 3: IOC graph visualizing female athletes&rsquo; participation</p>
+        </figcaption>
+</figure>
+
+<p>As can be seen, it is effective in the way that it shows the dramatic changes in female participation by showing four Olympics in each of the charts. However, its drawback is obvious: the number of Olympic Games that are able to be displayed is extremely limited. It is impossible to show the information of all the Olympics in the past 120 years using this method.</p>
+<p>Although there were many attempts visualizing the evolution of female participation in general, few visualizations exist showing the percentage change by continent. The only piece we found is several tables showing men and women participation in the Olympics from 1996 to 2016. No visualizations on this information were made. We decided that there is a gap here. Although both the total number and relative percentage of female athletes have been growing (Nunes, 2019), the increase might be different between continents. We decided to take a closer look at this in our study.</p>
+<div class="edit-meta">
+
+<br><a href="https://github.com/thingsym/hugo-theme-techdoc/edit/master/content/lit/lit-female.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://example.com/lit/" title="Literature Review"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Literature Review</a>
+<a class="nav nav-next" href="https://example.com/lit/homefiled/" title="Home-field Advantage">Next - Home-field Advantage <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="https://example.com">Home</a></li>
+
+<li class=""><a href="https://example.com/abstract/">Abstract</a>
+  
+</li>
+
+<li class=""><a href="https://example.com/motivation/">Motivation</a>
+  
+</li>
+
+<li class="parent has-sub-menu"><a href="https://example.com/lit/">Literature Review<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class="active"><a href="https://example.com/lit/lit-female/">Female Participation in Summer Olympics</a></li>
+<li class=""><a href="https://example.com/lit/homefiled/">Home-field Advantage</a></li>
+<li class=""><a href="https://example.com/lit/efficiency/">Medal Efficiency</a></li>
+<li class=""><a href="https://example.com/lit/ranking/">Ranking Sports by Number of Athletes</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/plans/">Visualization Plans<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/plans/01-plan-female/">Plans: Female Participation</a></li>
+<li class=""><a href="https://example.com/plans/02-plan-homefiled/">Plans: Home-field Advantage</a></li>
+<li class=""><a href="https://example.com/plans/03-plan-efficiency/">Plan: Medal Efficiency</a></li>
+<li class=""><a href="https://example.com/plans/04-plan-ranking/">Plans: Ranking Sports</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://example.com/plot/">Plotting<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://example.com/plot/01-plot-female/">Female Participation over Time</a></li>
+<li class=""><a href="https://example.com/plot/01-plot-female-continent/">Female Participation Across Continents</a></li>
+<li class=""><a href="https://example.com/plot/02-plot-homefiled/">Home-field Advantage</a></li>
+<li class=""><a href="https://example.com/plot/03-plot-efficiency/">Medal Efficiency</a></li>
+<li class=""><a href="https://example.com/plot/04-plot-ranking/">Ranking Sports</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://example.com/z-conclude/">Conclusion</a>
+  
+</li>
+
+<li class=""><a href="https://example.com/z-ref/">References</a>
+  
+</li>
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>
