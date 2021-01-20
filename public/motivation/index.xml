@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Motivation on Visualizing 120 years of Summer Olympics</title>
-    <link>https://example.com/motivation/</link>
+    <link>https://hugo-techdoc.netlify.app/motivation/</link>
     <description>Recent content in Motivation on Visualizing 120 years of Summer Olympics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://example.com/motivation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hugo-techdoc.netlify.app/motivation/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
