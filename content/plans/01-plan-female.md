@@ -6,7 +6,7 @@ As discussed above, we will use a line graph, stacked bar chart, and area chart 
 
 In a line graph, the x-axis will be time and the y-axis the percentage against the total number of participants. We will show both female and male athletes. See Figure 12.
 
-For stacked bar charts, the x-axis will be time and y-axis percentage against the total number of athletes. Two segments in each bar will represent male and female respectively, and the two will sum up to 100\% for every year presented. This will make the comparison between male and female participation very clear. See Figure 13.
+For stacked bar charts, the x-axis will be time and y-axis percentage against the total number of athletes. Two segments in each bar will represent male and female respectively, and the two will sum up to 100% for every year presented. This will make the comparison between male and female participation very clear. See Figure 13.
 
 {{<figure src="https://raw.githubusercontent.com/hongtaoh/olymvis/master/static/pics/1.png" caption="Figure 12: Line graph for female participation" width="500">}}
 

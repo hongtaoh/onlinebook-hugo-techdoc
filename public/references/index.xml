@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>References on Visualizing 120 years of Summer Olympics</title>
-    <link>https://hugo-techdoc.netlify.app/z-ref/</link>
+    <link>https://hugo-techdoc.netlify.app/references/</link>
     <description>Recent content in References on Visualizing 120 years of Summer Olympics</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://hugo-techdoc.netlify.app/z-ref/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hugo-techdoc.netlify.app/references/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
